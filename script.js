@@ -18,10 +18,18 @@ inputsDropdown.forEach(function (input) {
   input.addEventListener("keyup", function (event) {
     const inputValue = event.target.value;
     dropdownToggleItems.forEach((item) => {
-      if (item.querySelector("h1").textContent.indexOf(inputValue) == -1) {
-        item.style.display = "none";
-      } else {
-        item.style.display = "flex";
+      if (event.target.id === "txtPesquisaNome") {
+        if (item.querySelector("h1").textContent.indexOf(inputValue) == -1) {
+          item.style.display = "none";
+        } else {
+          item.style.display = "flex";
+        }
+      } else if (event.target.id === "txtPesquisaCpf") {
+        if (item.querySelector("h3").textContent.indexOf(inputValue) == -1) {
+          item.style.display = "none";
+        } else {
+          item.style.display = "flex";
+        }
       }
     });
   });
