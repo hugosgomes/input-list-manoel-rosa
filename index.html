@@ -10,11 +10,63 @@
 </head>
 
 <body>
-  <div class="table-container-header">
-    <div class="table-container-row-ini">
-      <div class="table-container-column-doc-ini">
-        <div class="table-container-column-name-caixa">
-          <input name="txtPesquisaNome" id="txtPesquisaNome" type="text" />
+  <div class="container">
+    <div class="input-row">
+      <div class="label-column">
+        <span>Quem terá seus benefícios alterados?</span>
+      </div>
+      <div class="input-column">
+        <div class="input-group">
+          <label for="txtPesquisaNome">Procure pelo nome</label>
+          <input class="input-dropdown" name="txtPesquisaNome" id="txtPesquisaNome" type="text" />
+        </div>
+        <div class="dropdown-toggle">
+          <div class="dropdown-toggle-item">
+            <div class="dropdown-toggle-item-labels">
+              <h1>José da Silva</h1>
+              <h3>CPF 111.111.111-11</h3>
+              <h3>Benefícios no pedido: R$ 2.144,88</h3>
+            </div>
+            <div class="dropdown-toggle-item-button">
+              <button>SELECIONAR</button>
+            </div>
+          </div>
+          <div class="dropdown-toggle-item">
+            <div class="dropdown-toggle-item-labels">
+              <h1>José da Silva 2</h1>
+              <h3>CPF 222.222.222-22</h3>
+              <h3>Benefícios no pedido: R$ 2.144,88</h3>
+            </div>
+            <div class="dropdown-toggle-item-button">
+              <button>SELECIONAR</button>
+            </div>
+          </div>
+          <div class="dropdown-toggle-item">
+            <div class="dropdown-toggle-item-labels">
+              <h1>José da Silva 3</h1>
+              <h3>CPF 333.333.333-33</h3>
+              <h3>Benefícios no pedido: R$ 2.144,88</h3>
+            </div>
+            <div class="dropdown-toggle-item-button">
+              <button>SELECIONAR</button>
+            </div>
+          </div>
+          <div class="dropdown-toggle-item">
+            <div class="dropdown-toggle-item-labels">
+              <h1>André da Silva 4</h1>
+              <h3>CPF 444.444.444-44</h3>
+              <h3>Benefícios no pedido: R$ 2.144,88</h3>
+            </div>
+            <div class="dropdown-toggle-item-button">
+              <button>SELECIONAR</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="input-column">
+        <div class="input-group">
+          <label for="txtPesquisaCpf">Procure pelo cpf</label>
+          <input class="input-dropdown" name="txtPesquisaCpf" id="txtPesquisaCpf" type="text" />
         </div>
         <div class="dropdown-toggle">
           <div class="dropdown-toggle-item">
@@ -60,36 +112,36 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="table">
-    <div class="table-header">
-      <div class="table-column table-column-40">CPF</div>
-      <div class="table-column table-column-20"><img src="./images/refeicao-pass.png" alt=""></div>
-      <div class="table-column table-column-20"><img src="./images/alimentacao-pass.jfif" alt=""></div>
-      <div class="table-column table-column-20"><img src="./images/combustivel-pass.png" alt=""></div>
-    </div>
-    <div class="table-row">
-      <div class="table-column table-column-40">
-        <div class="table-cell">
-          <span class="cpf-value"></span>
-        </div>
+    <div class="table">
+      <div class="table-header">
+        <div class="table-column table-column-40">CPF</div>
+        <div class="table-column table-column-20"><img src="./images/refeicao-pass.png" alt=""></div>
+        <div class="table-column table-column-20"><img src="./images/alimentacao-pass.jfif" alt=""></div>
+        <div class="table-column table-column-20"><img src="./images/combustivel-pass.png" alt=""></div>
       </div>
-      <div class="table-column table-column-20">
-        <div class="table-cell">
-          <span>R$</span>
-          <span class="value-benefit"></span>
+      <div class="table-row">
+        <div class="table-column table-column-40">
+          <div class="table-cell">
+            <span class="cpf-value"></span>
+          </div>
         </div>
-      </div>
-      <div class="table-column table-column-20">
-        <div class="table-cell">
-          <span>R$</span>
-          <span class="value-benefit"></span>
+        <div class="table-column table-column-20">
+          <div class="table-cell">
+            <span>R$</span>
+            <span class="value-benefit"></span>
+          </div>
         </div>
-      </div>
-      <div class="table-column table-column-20">
-        <div class="table-cell">
-          <span>R$</span>
-          <span class="value-benefit"></span>
+        <div class="table-column table-column-20">
+          <div class="table-cell">
+            <span>R$</span>
+            <span class="value-benefit"></span>
+          </div>
+        </div>
+        <div class="table-column table-column-20">
+          <div class="table-cell">
+            <span>R$</span>
+            <span class="value-benefit"></span>
+          </div>
         </div>
       </div>
     </div>

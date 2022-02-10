@@ -1,89 +1,35 @@
+/* estilos Hugo */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   outline: none;
 }
-#txtPesquisaNome::placeholder {
-  font-weight: bold;
-  font-size: 15px;
-  color: #3a397d;
+
+body {
+  padding: 16px;
+  font-family: Sansa Pro Normal;
 }
 
-::-webkit-scrollbar {
-  /* width scrollbar*/
-  width: 8px;
+@font-face {
+  font-family: Sansa Pro Normal;
+  src: url("./fonts/SansaPro-Normal.otf");
 }
 
-::-webkit-scrollbar-track {
-  /* Track scrollbar*/
-  background: #f5f5f5;
+@font-face {
+  font-family: Sansa Pro Bold;
+  src: url("./fonts/SansaPro-Bold.otf");
 }
-
-::-webkit-scrollbar-thumb {
-  /* Handle scrollbar*/
-  background: #888;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  /* Handle on hover scrollbar*/
-  background: #ea444e;
-}
-.table-container-row-ini {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  width: 99.5%;
-  background-color: white;
-  border-left: 1px solid #f5f5f5;
-  border-bottom: 1px solid #f5f5f5;
-}
-
-.table-container-column-name-caixa {
-  flex-grow: 0;
-  width: 30%;
-  border: 1px solid;
-  font-size: 25px;
-}
-.table-container-column-doc-ini {
-  flex-grow: 0;
-  width: 35%;
-  text-align: left;
-  border-left: 1px solid #f5f5f5;
-}
-
-.table-container-header {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 0;
-  width: 1050px;
-
-  box-shadow: 5px 0px 5px rgba(218, 219, 223, 1);
-}
-#txtPesquisaNome {
-  border: none;
-  background-color: transparent !important;
-  color: blue !important;
-  width: 100%;
-}
-
-/* estilos Hugo */
 
 .table-container-header {
   margin: 0 auto;
   padding: 8px;
 }
 
-.table-container-column-name-caixa {
-  width: 100%;
-}
-
-#txtPesquisaNome {
-  font-size: 15px;
-  padding: 4px;
-}
-
 .dropdown-toggle {
+  position: absolute;
+  width: 380px;
   background-color: #f3f3f3;
   transition: all 0.3s;
   height: 0;
@@ -110,6 +56,7 @@
 }
 
 .dropdown-toggle-item-labels h1 {
+  font-family: Sansa Pro Bold;
   color: #3a397d;
   font-size: 16px;
   font-weight: 700;
@@ -117,8 +64,10 @@
 }
 
 .dropdown-toggle-item-labels h3 {
-  font-size: 14px;
-  font-weight: 100;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  color: #2b3d95;
 }
 
 .dropdown-toggle-item-button {
@@ -129,13 +78,12 @@
 }
 
 .dropdown-toggle-item-button button {
+  width: 100px;
   height: 30px;
-  border: 1px solid #3a397d;
-  border-radius: 11px;
-  background-color: #3a397d;
+  background-color: rgba(43, 61, 149, 1);
+  border-radius: 10px;
   color: white;
-  font-size: 11px;
-  padding: 8px;
+  font-size: 13px;
   cursor: pointer;
 }
 
@@ -210,4 +158,46 @@
   width: 70px;
   height: 30px;
   margin-left: 10px;
+}
+
+.label-column {
+  display: flex;
+  width: 280px;
+  align-items: flex-end;
+  font-family: "Sansa Pro Bold", "Sansa Pro Normal", "Sansa Pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+  color: #2b3d95;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.input-column {
+  width: 380px;
+}
+
+.input-group label {
+  color: #2b3d95;
+  margin-bottom: 10px;
+}
+
+.input-group input {
+  margin-top: 20px;
+  position: relative;
+  width: 380px;
+  height: 60px;
+  padding: 4px;
+  border: 1px solid rgba(121, 121, 121, 1);
+  padding: 2px 2px 2px 2px;
+  font-family: "Sansa Pro Normal", "Sansa Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  letter-spacing: normal;
+  color: #000000;
 }
