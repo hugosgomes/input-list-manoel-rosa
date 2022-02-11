@@ -29,7 +29,7 @@ body {
 
 .dropdown-toggle {
   position: absolute;
-  width: 380px;
+  width: 280px;
   background-color: #f3f3f3;
   transition: all 0.3s;
   height: 0;
@@ -88,11 +88,12 @@ body {
 }
 
 .table {
-  width: 1050px;
+  width: 990px;
   margin: 0 auto;
   height: 100px;
   margin-top: 100px;
   display: none;
+  font-size: 15px;
 }
 
 .table.active {
@@ -104,10 +105,16 @@ body {
   font-size: 16px;
   font-weight: 700;
   display: flex;
+  background-color: #f7f7f7;
 }
 
 .table-row {
   display: flex;
+  background-color: #f7f7f7;
+}
+
+.table-column-10 {
+  width: 10%;
 }
 
 .table-column-20 {
@@ -124,8 +131,21 @@ body {
 }
 
 .table-column {
-  border-bottom: 1px solid #d1d1d1;
-  border-right: 1px solid #d1d1d1;
+  border-bottom: 1px solid #f0f0f3;
+  border-right: 1px solid #f0f0f3;
+}
+
+.table-row .table-column:nth-child(-n + 2) .table-cell {
+  justify-content: flex-start;
+}
+
+.table-row .table-column:nth-child(7) {
+  padding: 4px;
+  font-size: 13px;
+}
+
+.table-row .table-column:nth-child(8) img {
+  cursor: pointer;
 }
 
 .table-cell {
@@ -134,12 +154,12 @@ body {
   align-items: center;
 }
 
-.table-header .table-column:not(:first-child) {
+.table-header .table-column:nth-child(n + 3) {
   display: flex;
   justify-content: center;
 }
 
-.table-header .table-column:first-child {
+.table-header .table-column:nth-child(-n + 2) {
   display: flex;
   align-items: center;
 }
@@ -155,8 +175,8 @@ body {
 .value-benefit {
   display: inline-block;
   border: 1px solid #000;
-  width: 70px;
-  height: 30px;
+  width: 50px;
+  height: 25px;
   margin-left: 10px;
 }
 
@@ -189,7 +209,7 @@ body {
 .input-group input {
   margin-top: 20px;
   position: relative;
-  width: 380px;
+  width: 280px;
   height: 60px;
   padding: 4px;
   border: 1px solid rgba(121, 121, 121, 1);
